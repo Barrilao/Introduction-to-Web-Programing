@@ -1,0 +1,50 @@
+* {margin: 0px;padding: 0px;text-decoration: none;}
+
+#cuerpo{
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+}
+
+hr{
+  border-color: red;
+  height: 2px;
+  background-color:red;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+img{
+  width: 545px;
+  padding-bottom: 30px;
+}
+
+.list-students{
+    background-color: pink;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#list-fruits{
+    background-color: yellow;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+table{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
