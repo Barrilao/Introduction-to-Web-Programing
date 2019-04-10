@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="color" placeholder="Enter colors as #zzzzzz">
+
+    <script>
+      let color = document.getElementById('color');
+      let body = document.getElementsByTagName('body');
+
+      function change(){
+        body[0].style.backgroundColor = color.value;
+      }
+
+      color.addEventListener('keyup',change);
+
+    </script>
+  </body>
+</html>

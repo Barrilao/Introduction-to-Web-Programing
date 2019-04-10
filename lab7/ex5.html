@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <img id="bulb" src=images/bulb.jpg alt="" />
+    <script>
+      let bulb = document.getElementById('bulb');
+
+      function on() {
+      bulb.src = "images/light-bulb.jpg";
+      }
+
+      function off() {
+      bulb.src = "images/bulb.jpg";
+      }
+
+      bulb.addEventListener('mouseover', on);
+      bulb.addEventListener('mouseout', off);
+    </script>
+  </body>
+</html>

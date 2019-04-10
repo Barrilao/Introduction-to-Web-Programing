@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		input {
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="text" placeholder="n = " id="n"><br>
+	<input type="text" placeholder="s = " id="s"><br>
+	<input type="text" placeholder="a = " id="a"><br>
+	<button id="area">Calculate</button>
+
+
+	<input type="text" placeholder="display result" id="display">
+
+	<script>
+
+			let n = document.getElementById('n');
+			let s = document.getElementById('s');
+			let display = document.getElementById('display');
+			let a = document.getElementById('a');
+			let area = document.getElementById('area');
+
+			function areing() {
+				let result = parseInt(n.value) * parseInt(s.value) * parseInt(a.value) * '0.5';
+				display.value = result;
+			}
+			area.addEventListener('click', areing);
+	</script>
+</body>
+</html>

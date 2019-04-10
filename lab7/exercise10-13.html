@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div id="box"></div>
+
+	<script>
+		let box = document.getElementById('box');
+		function drawBox() {
+			box.style.width = '200px';
+		 	box.style.height = '200px';
+		 	box.style.backgroundColor = 'red';
+		}
+		drawBox();
+
+		function changec() {
+			box.style.height = parseInt(box.style.height)/2 + 'px';
+			box.style.width = parseInt(box.style.width)/2 + 'px';
+		}
+
+		box.addEventListener('click',changec);
+
+
+	</script>
+
+</body>
+</html>
