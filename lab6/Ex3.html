@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+
+	<script>
+        function randomDice(n){
+            return Math.floor(Math.random() * 6 )+ 1;
+        }
+        
+
+		function monopolyDice(){
+        let dice1 = 0;
+        let dice2 = 0;
+        let counter = 0;
+        let sum = 0;
+
+        while(dice1===dice2){
+            dice1 = randomDice(6);
+            dice2 = randomDice(6);
+            console.log(dice1 + " " + dice2);
+
+            sum += dice1 + dice2;
+            counter++;
+
+            if (counter === 3 && dice1 === dice2 ){
+                sum=0;
+                break;
+            }
+        }
+        return sum;
+        }
+
+        console.log(monopolyDice());
+	</script>
+
+</body>
+</html>
